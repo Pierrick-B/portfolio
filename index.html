@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Pierrick Bapicot - Portfolio BUT Informatique</title>
+    <meta name="description" content="Portfolio de Pierrick Bapicot, étudiant BUT Informatique à l'IUT Nord Franche-Comté de Belfort">
+    
+    <!-- Fonts Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" aria-label="Basculer le thème">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="nav-floating" id="mainNav">
+        <div class="nav-brand">
+            <span class="nav-logo">{ }</span>
+            <span class="nav-title">Portfolio</span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#hero" class="nav-link active" data-section="hero">Accueil</a></li>
+            <li><a href="#about" class="nav-link" data-section="about">À propos</a></li>            <li><a href="#competence1" class="nav-link" data-section="competence1">Réaliser</a></li>
+            <li><a href="#competence2" class="nav-link" data-section="competence2">Collaborer</a></li>
+            <li><a href="#projects" class="nav-link" data-section="projects">Projets</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="code-rain"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">                    <h1 class="hero-title">
+                        <span class="typing-text">Pierrick Bapicot</span>
+                        <span class="cursor">|</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Étudiant BUT Informatique, 19 ans, du Territoire de Belfort.
+                        Passionné par le développement d'applications et la collaboration en équipe.
+                    </p>                    <div class="hero-badges">
+                        <span class="badge">HTML/CSS/JS</span>
+                        <span class="badge">Python</span>
+                        <span class="badge">Java</span>
+                        <span class="badge">C</span>
+                        <span class="badge">MySQL</span>
+                        <span class="badge">Flask</span>
+                        <span class="badge">JavaFX</span>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#competence1" class="btn btn-primary">
+                            <span>Découvrir mes compétences</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card">
+                        <div class="card-header">
+                            <div class="card-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="card-title">portfolio.js</span>
+                        </div>
+                        <div class="card-content">                            <pre><code class="language-js">class PierrickBapicot {
+  constructor() {
+    this.nom = 'Pierrick Bapicot';
+    this.age = 19;
+    this.localisation = 'Territoire de Belfort';
+    this.competences = [
+      'Réaliser un développement',
+      'Collaborer en équipe'
+    ];
+    this.motivation = '∞';
+  }
+  
+  async progresser() {
+    return this.passion + this.travail;
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Défiler pour explorer</span>
+            <div class="scroll-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 13L12 18L17 13M7 6L12 11L17 6"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">À propos de moi</h2>
+                <p class="section-subtitle">Mon parcours et ma motivation en informatique</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">                    <div class="about-card">
+                        <h3>Mon parcours</h3>
+                        <p>
+                            Je suis Pierrick Bapicot, 19 ans, originaire du Territoire de Belfort. 
+                            Actuellement en 1ère année de BUT Informatique à l'IUT Nord Franche-Comté,
+                            je me passionne pour le développement d'applications et le travail collaboratif.
+                            Chaque projet est une opportunité d'apprendre et de grandir.
+                        </p>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-date">2024-2025</span>
+                                <span class="timeline-event">BUT Informatique - IUT Nord Franche-Comté</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2023-2024</span>
+                                <span class="timeline-event">UTBM</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2022-2023</span>
+                                <span class="timeline-event">Baccalauréat obtenu</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2005</span>
+                                <span class="timeline-event">Naissance dans le Territoire de Belfort</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card">
+                        <h3>Ma motivation</h3>
+                        <p>
+                            L'informatique représente pour moi l'alliance parfaite entre créativité technique 
+                            et résolution de problèmes concrets. J'apprécie particulièrement le travail en équipe 
+                            qui permet de combiner différentes expertises pour créer des solutions innovantes. 
+                            Mon objectif est de continuer à développer mes compétences tout en contribuant 
+                            positivement aux projets collectifs.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="about-stats">                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16,18 22,12 16,6"/>
+                                <polyline points="8,6 2,12 8,18"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="stat-number" data-target="10">0</div>
+                        <div class="stat-label">Technologies maîtrisées</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                            </svg>
+                        </div>
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Projets réalisés</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 4H18C19.1046 4 20 4.89543 20 6V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V6C4 4.89543 4.89543 4 6 4H8M16 4V2M8 4V2M8 4H16"/>
+                            </svg>
+                        </div>
+                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-label">Compétences analysées</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétence 1: Réaliser un développement d'application -->
+    <section id="competence1" class="competence competence-dev">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Réaliser un développement d'application</h2>
+                <p class="section-subtitle">Analyse de ma première compétence BUT Informatique</p>
+            </div>
+            
+            <div class="competence-dashboard">
+                <div class="dashboard-header">
+                    <h3>Composantes essentielles</h3>
+                    <div class="progress-ring">
+                        <svg class="progress-ring-svg" width="120" height="120">
+                            <circle class="progress-ring-circle-bg" stroke="#e5e7eb" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                            <circle class="progress-ring-circle" stroke="#3b82f6" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" data-progress="75"/>
+                        </svg>
+                        <div class="progress-text">75%</div>
+                    </div>
+                </div>
+                
+                <div class="competence-components">
+                    <div class="component-card">
+                        <div class="component-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16,18 22,12 16,6"/>
+                                <polyline points="8,6 2,12 8,18"/>
+                            </svg>
+                        </div>
+                        <h4>Développer des applications informatiques simples</h4>
+                        <p>Conception et réalisation d'applications en utilisant différents paradigmes de programmation.</p>
+                        <div class="component-progress">
+                            <div class="progress-bar" data-width="80"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="component-card">
+                        <div class="component-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14.7 6.3A1 1 0 0 0 13 5H5A2 2 0 0 0 3 7V19A2 2 0 0 0 5 21H13A1 1 0 0 0 14.7 19.7L21 13L14.7 6.3Z"/>
+                            </svg>
+                        </div>
+                        <h4>Partir des exigences et aller jusqu'à une application complète</h4>
+                        <p>Analyse des besoins, conception, développement et tests d'applications fonctionnelles.</p>
+                        <div class="component-progress">
+                            <div class="progress-bar" data-width="70"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="component-card">
+                        <div class="component-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8A2 2 0 0 0 19 6H5A2 2 0 0 0 3 8V16A2 2 0 0 0 5 18H19A2 2 0 0 0 21 16Z"/>
+                                <polyline points="7,10 12,15 17,10"/>
+                            </svg>
+                        </div>
+                        <h4>Appliquer des méthodes de développement</h4>
+                        <p>Utilisation de méthodologies structurées et d'outils de développement collaboratif.</p>
+                        <div class="component-progress">
+                            <div class="progress-bar" data-width="65"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="competence-analysis">
+                <div class="analysis-grid">
+                    <div class="analysis-card knowledge">
+                        <h3>Savoirs théoriques</h3>
+                        <ul class="knowledge-list">
+                            <li>
+                                <span class="knowledge-item">Paradigmes de programmation</span>
+                                <span class="knowledge-level">Acquis</span>
+                            </li>
+                            <li>
+                                <span class="knowledge-item">Structures de données</span>
+                                <span class="knowledge-level">Acquis</span>
+                            </li>
+                            <li>
+                                <span class="knowledge-item">Algorithmique</span>
+                                <span class="knowledge-level">En cours</span>
+                            </li>
+                            <li>
+                                <span class="knowledge-item">Génie logiciel</span>
+                                <span class="knowledge-level">En cours</span>
+                            </li>
+                        </ul>
+                    </div>
+                      <div class="analysis-card skills">
+                        <h3>Savoir-faire pratiques</h3>
+                        
+                        <div class="skills-category">
+                            <h4>Langages de programmation</h4>
+                            <div class="skills-grid">
+                                <div class="skill-tag">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" alt="HTML5" class="skill-icon">
+                                    HTML5
+                                </div>
+                                <div class="skill-tag">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3" class="skill-icon">
+                                    CSS3
+                                </div>
+                                <div class="skill-tag">
+                                    <img src="https://logos-marques.com/wp-content/uploads/2021/03/JavaScript-Logo.png" alt="JavaScript" class="skill-icon">
+                                    JavaScript
+                                </div>
+                                <div class="skill-tag">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python" class="skill-icon">
+                                    Python
+                                </div>
+                                <div class="skill-tag">
+                                    <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/2/2e/Java_Logo.svg/1200px-Java_Logo.svg.png" alt="Java" class="skill-icon">
+                                    Java
+                                </div>
+                                <div class="skill-tag">
+                                    <img src="https://gimgs2.nohat.cc/thumb/f/640/c-language-global-or-external-variables-with-examples-c-programming-logo--m2H7G6A0b1A0K9m2.jpg" alt="C" class="skill-icon">
+                                    C
+                                </div>
+                            </div>
+                        </div>                        <div class="skills-category">
+                            <h4>Frameworks & Libraries</h4>
+                            <div class="skills-grid">
+                                <div class="skill-tag">
+                                    <img src="https://miro.medium.com/v2/resize:fit:548/1*TbPi3VMXptPUJXbetjaayg.png" alt="Flask" class="skill-icon flask-logo">
+                                    Flask
+                                </div>
+                                <div class="skill-tag">
+                                    <img src="https://www.qftest.com/blog/resources/JavaFX.png" alt="JavaFX" class="skill-icon">
+                                    JavaFX
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-category">
+                            <h4>Bases de données</h4>
+                            <div class="skills-grid">
+                                <div class="skill-tag">
+                                    <img src="https://cdn2.boryl.fr/2020/12/fd8a25a0-mysql.svg" alt="MySQL" class="skill-icon">
+                                    MySQL
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-category">
+                            <h4>IDEs & Outils de développement</h4>
+                            <div class="skills-grid">
+                                <div class="skill-tag">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png" alt="VS Code" class="skill-icon">
+                                    VS Code
+                                </div>
+                                <div class="skill-tag">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/PyCharm_Icon.svg/2048px-PyCharm_Icon.svg.png" alt="PyCharm" class="skill-icon">
+                                    PyCharm
+                                </div>
+                                <div class="skill-tag">
+                                    <img src="https://www.softline.fr/wp-content/uploads/2023/10/IntelliJ_IDEA_Icon.svg_.png" alt="IntelliJ IDEA" class="skill-icon">
+                                    IntelliJ IDEA
+                                </div>
+                                <div class="skill-tag">
+                                    <img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/9d588608-4095-4c12-b97c-a367088b4f2f.png?w=128&h=128&fit=max&dpr=3&auto=format&q=50" alt="DataGrip" class="skill-icon">
+                                    DataGrip
+                                </div>
+                                <div class="skill-tag">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Clion.svg/2048px-Clion.svg.png" alt="CLion" class="skill-icon">
+                                    CLion
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-category">
+                            <h4>Outils de versioning & collaboration</h4>
+                            <div class="skills-grid">
+                                <div class="skill-tag">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png" alt="Git" class="skill-icon">
+                                    Git/GitHub
+                                </div>
+                                <div class="skill-tag">Debugging</div>
+                                <div class="skill-tag">Testing</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sae-showcase">
+                <h3>Illustration dans les SAÉ</h3>
+                <div class="sae-grid">                    <div class="sae-card" data-sae="1">
+                        <div class="sae-front">
+                            <div class="sae-header">
+                                <span class="sae-type">SAÉ 5.6</span>
+                                <h4>Site d'analyse Thales</h4>
+                            </div>
+                            <div class="sae-preview">
+                                <div class="web-preview">
+                                    <div class="browser-chrome">
+                                        <div class="browser-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="browser-url">thales-analysis.com</div>
+                                    </div>
+                                    <div class="iframe-placeholder">
+                                        <div class="chart-icon">📊</div>
+                                        <p>Site d'analyse interactif</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sae-flip-hint">Cliquer pour plus de détails</div>
+                        </div>
+                        <div class="sae-back">
+                            <h4>Traces et analyse</h4>                            <div class="trace-content">
+                                <p><strong>Contexte :</strong> Développement d'un site web d'analyse avec intégration d'iframe pour visualiser des données Thales. <em>Travail en groupe.</em></p>
+                                <p><strong>Technologies :</strong> HTML5, CSS3, JavaScript, API REST</p>
+                                <p><strong>Compétences mobilisées :</strong></p>
+                                <ul>
+                                    <li>Développement web front-end avancé</li>
+                                    <li>Intégration d'iframe et gestion de contenu externe</li>
+                                    <li>Interface utilisateur interactive</li>
+                                    <li>Traitement et visualisation de données</li>
+                                </ul>
+                                <div class="trace-files">
+                                    <span class="file-tag">🌐 Site web déployé</span>
+                                    <span class="file-tag">📊 Intégration iframe</span>
+                                    <span class="file-tag">💻 Code source</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sae-card" data-sae="2">
+                        <div class="sae-front">
+                            <div class="sae-header">
+                                <span class="sae-type">SAÉ 1.2</span>
+                                <h4>Pauvocoder Java</h4>
+                            </div>
+                            <div class="sae-preview">
+                                <div class="audio-preview">
+                                    <div class="audio-interface">
+                                        <div class="audio-waveform">
+                                            <div class="wave-bar"></div>
+                                            <div class="wave-bar"></div>
+                                            <div class="wave-bar"></div>
+                                            <div class="wave-bar"></div>
+                                            <div class="wave-bar"></div>
+                                        </div>
+                                        <div class="audio-controls">
+                                            <button class="play-btn">▶</button>
+                                            <span class="audio-label">Vocoder</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sae-flip-hint">Cliquer pour plus de détails</div>
+                        </div>
+                        <div class="sae-back">
+                            <h4>Traces et analyse</h4>                            <div class="trace-content">
+                                <p><strong>Contexte :</strong> Développement d'un pauvocoder (vocoder simplifié) en Java avec traitement audio en temps réel. <em>Travail en binôme.</em></p>
+                                <p><strong>Technologies :</strong> Java, JavaSound API, Swing</p>
+                                <p><strong>Compétences mobilisées :</strong></p>
+                                <ul>
+                                    <li>Programmation orientée objet avancée</li>
+                                    <li>Traitement du signal audio</li>
+                                    <li>Interface graphique Swing</li>
+                                    <li>Gestion des flux audio en temps réel</li>
+                                </ul>
+                                <div class="trace-files">
+                                    <span class="file-tag">🎵 Exemples audio</span>
+                                    <span class="file-tag">📱 Interface graphique</span>
+                                    <span class="file-tag">☕ Code Java</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reflexion-critique">
+                <h3>Analyse réflexive et critique</h3>
+                <div class="reflexion-content">
+                    <div class="reflexion-card">
+                        <h4>Points forts développés</h4>
+                        <ul>
+                            <li>Maîtrise des langages de programmation fondamentaux (HTML, CSS, JavaScript, Python)</li>
+                            <li>Capacité à analyser un besoin client et le traduire en spécifications techniques</li>
+                            <li>Application des bonnes pratiques de développement (code propre, commentaires, versioning)</li>
+                            <li>Compréhension des architectures web modernes (front-end/back-end, MVC)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="reflexion-card">
+                        <h4>Axes d'amélioration identifiés</h4>
+                        <ul>
+                            <li>Approfondir les méthodes de tests automatisés (tests unitaires, tests d'intégration)</li>
+                            <li>Développer mes compétences en sécurité applicative</li>
+                            <li>Améliorer ma maîtrise des frameworks modernes (React, Vue.js, Django)</li>
+                            <li>Renforcer mes connaissances en optimisation des performances</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="reflexion-card">
+                        <h4>Perspectives d'évolution</h4>
+                        <p>
+                            Cette compétence constitue le socle de ma formation en informatique. Je souhaite 
+                            continuer à la développer en explorant des technologies plus avancées comme les 
+                            frameworks JavaScript modernes, les architectures microservices, et en approfondissant 
+                            mes connaissances en développement mobile et en intelligence artificielle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- Compétence 2: Collaborer au sein d'une équipe informatique -->
+    <section id="competence2" class="competence competence-optim">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Collaborer au sein d'une équipe informatique</h2>
+                <p class="section-subtitle">Analyse de ma deuxième compétence BUT Informatique</p>
+            </div>
+            
+            <div class="competence-dashboard">
+                <div class="dashboard-header">
+                    <h3>Composantes essentielles</h3>
+                    <div class="progress-ring">
+                        <svg class="progress-ring-svg" width="120" height="120">
+                            <circle class="progress-ring-circle-bg" stroke="#e5e7eb" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                            <circle class="progress-ring-circle" stroke="#10b981" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" data-progress="72"/>
+                        </svg>
+                        <div class="progress-text">72%</div>
+                    </div>
+                </div>
+                
+                <div class="competence-components">
+                    <div class="component-card">
+                        <div class="component-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21V19C23 18.1645 22.7155 17.3551 22.2094 16.7118C21.7033 16.0684 20.0652 15.6343 19 15.4751"/>
+                                <path d="M16 3.13A4.001 4.001 0 0 1 19 7C19 8.2 18.5 9.27 17.71 10"/>
+                            </svg>
+                        </div>
+                        <h4>Identifier les processus de développement</h4>
+                        <p>Comprendre les méthodologies de travail en équipe et les rôles de chacun dans le projet.</p>
+                        <div class="component-progress">
+                            <div class="progress-bar" data-width="75"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="component-card">
+                        <div class="component-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M8 12H16M12 8V16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"/>
+                            </svg>
+                        </div>
+                        <h4>Appliquer une démarche de travail collaboratif</h4>
+                        <p>Utiliser les outils de collaboration et suivre les bonnes pratiques de travail en équipe.</p>
+                        <div class="component-progress">
+                            <div class="progress-bar" data-width="70"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="component-card">
+                        <div class="component-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15A2 2 0 0 1 19 17H5A2 2 0 0 1 3 15V9A2 2 0 0 1 5 7H19A2 2 0 0 1 21 9V15Z"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                                <polyline points="16,15 17,15 18,15"/>
+                            </svg>
+                        </div>
+                        <h4>Acquérir les compétences interpersonnelles</h4>
+                        <p>Développer la communication, l'écoute et la gestion des conflits au sein des équipes projet.</p>
+                        <div class="component-progress">
+                            <div class="progress-bar" data-width="68"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="competence-analysis">
+                <div class="analysis-grid">
+                    <div class="analysis-card knowledge">
+                        <h3>Savoirs théoriques</h3>
+                        <ul class="knowledge-list">
+                            <li>
+                                <span class="knowledge-item">Méthodologies Agiles (Scrum, Kanban)</span>
+                                <span class="knowledge-level">En cours</span>
+                            </li>
+                            <li>
+                                <span class="knowledge-item">Gestion de versions (Git)</span>
+                                <span class="knowledge-level">Acquis</span>
+                            </li>
+                            <li>
+                                <span class="knowledge-item">Communication professionnelle</span>
+                                <span class="knowledge-level">Acquis</span>
+                            </li>
+                            <li>
+                                <span class="knowledge-item">Travail collaboratif</span>
+                                <span class="knowledge-level">En cours</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="analysis-card skills">
+                        <h3>Savoir-faire pratiques</h3>
+                        <div class="skills-grid">
+                            <div class="skill-tag">Git/GitHub</div>
+                            <div class="skill-tag">Trello/Kanban</div>
+                            <div class="skill-tag">Discord/Teams</div>
+                            <div class="skill-tag">Documentation</div>
+                            <div class="skill-tag">Pair Programming</div>
+                            <div class="skill-tag">Code Review</div>
+                            <div class="skill-tag">Répartition des tâches</div>
+                            <div class="skill-tag">Communication écrite</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sae-showcase">
+                <h3>Illustration dans les SAÉ</h3>
+                <div class="sae-grid">
+                    <div class="sae-card" data-sae="1">
+                        <div class="sae-front">
+                            <div class="sae-header">
+                                <span class="sae-type">SAÉ 3.4.5</span>
+                                <h4>Projet e-commerce en équipe</h4>
+                            </div>
+                            <div class="sae-preview">
+                                <div class="team-preview">
+                                    <div class="team-member"></div>
+                                    <div class="team-member"></div>
+                                    <div class="team-member"></div>
+                                    <div class="team-member"></div>
+                                </div>
+                            </div>
+                            <div class="sae-flip-hint">Cliquer pour plus de détails</div>
+                        </div>
+                        <div class="sae-back">
+                            <h4>Traces et analyse</h4>                            <div class="trace-content">
+                                <p><strong>Contexte :</strong> Développement d'un site e-commerce complet en équipe de 4 personnes. <em>Travail en groupe.</em></p>
+                                <p><strong>Technologies :</strong> PHP, MySQL, HTML/CSS, JavaScript</p>
+                                <p><strong>Compétences mobilisées :</strong></p>
+                                <ul>
+                                    <li>Répartition des tâches et planification</li>
+                                    <li>Utilisation de Git pour le travail collaboratif</li>
+                                    <li>Communication régulière et suivi d'avancement</li>
+                                    <li>Intégration et tests d'équipe</li>
+                                </ul>
+                                <div class="trace-files">
+                                    <span class="file-tag">📋 Tableau Kanban</span>
+                                    <span class="file-tag">🌳 Historique Git</span>
+                                    <span class="file-tag">📝 CR de réunions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sae-card" data-sae="2">
+                        <div class="sae-front">
+                            <div class="sae-header">
+                                <span class="sae-type">SAÉ 1.2.6</span>
+                                <h4>Jeu Quixo en binôme</h4>
+                            </div>
+                            <div class="sae-preview">
+                                <div class="game-preview">
+                                    <div class="game-board">
+                                        <div class="game-cell"></div>
+                                        <div class="game-cell"></div>
+                                        <div class="game-cell"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sae-flip-hint">Cliquer pour plus de détails</div>
+                        </div>
+                        <div class="sae-back">
+                            <h4>Traces et analyse</h4>                            <div class="trace-content">
+                                <p><strong>Contexte :</strong> Développement du jeu Quixo en Java avec JavaFX en binôme. <em>Travail en binôme.</em></p>
+                                <p><strong>Technologies :</strong> Java, JavaFX, Git</p>
+                                <p><strong>Compétences mobilisées :</strong></p>
+                                <ul>
+                                    <li>Programmation en binôme (pair programming)</li>
+                                    <li>Architecture MVC collaborative</li>
+                                    <li>Tests et validation croisée du code</li>
+                                    <li>Résolution de conflits de fusion Git</li>
+                                </ul>
+                                <div class="trace-files">
+                                    <span class="file-tag">🎮 Jeu fonctionnel</span>
+                                    <span class="file-tag">📊 Diagramme UML</span>
+                                    <span class="file-tag">🧪 Tests unitaires</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reflexion-critique">
+                <h3>Analyse réflexive et critique</h3>
+                <div class="reflexion-content">
+                    <div class="reflexion-card">
+                        <h4>Points forts développés</h4>
+                        <ul>
+                            <li>Capacité d'adaptation aux différents styles de travail de mes coéquipiers</li>
+                            <li>Utilisation efficace des outils de collaboration (Git, Trello, Discord)</li>
+                            <li>Communication claire et régulière lors des réunions d'équipe</li>
+                            <li>Esprit d'entraide et de partage de connaissances</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="reflexion-card">
+                        <h4>Axes d'amélioration identifiés</h4>
+                        <ul>
+                            <li>Développer mes compétences en gestion de projet et leadership</li>
+                            <li>Améliorer ma capacité à gérer les conflits et tensions</li>
+                            <li>Renforcer mes techniques de présentation et de documentation</li>
+                            <li>Approfondir ma connaissance des méthodologies Agiles</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="reflexion-card">
+                        <h4>Perspectives d'évolution</h4>
+                        <p>
+                            La collaboration en équipe est essentielle dans le monde professionnel. Je souhaite 
+                            continuer à développer cette compétence en participant à des projets de plus grande 
+                            envergure, en expérimentant différents rôles (chef de projet, développeur, testeur) 
+                            et en approfondissant ma maîtrise des méthodologies Agiles pour devenir un membre 
+                            d'équipe plus efficace et polyvalent.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Projets & Réalisations</h2>
+                <p class="section-subtitle">Galerie de mes projets et SAÉ avec études de cas détaillées</p>
+            </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">Applications</button>
+                <button class="filter-btn" data-filter="sae">SAÉ</button>
+            </div>
+              <div class="projects-grid" id="projectsGrid">
+                <div class="project-card" data-category="web sae">
+                    <div class="project-image">
+                        <img src="assets/project1.jpg" alt="Portfolio Personnel" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="btn-zoom" data-project="1">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="M21 21L16.65 16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <h3>Portfolio BUT Informatique</h3>
+                        <p>Portfolio académique moderne avec thème sombre/clair, animations fluides et analyse de compétences BUT</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Pierrick-B" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13V6A2 2 0 0 0 16 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H11"/>
+                                    <circle cx="18" cy="18" r="3"/>
+                                    <path d="M22 18L20 20L18 18"/>
+                                </svg>
+                                Voir le code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="app sae">
+                    <div class="project-image">
+                        <img src="assets/project1.jpg" alt="Pauvocoder Java" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="btn-zoom" data-project="2">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="M21 21L16.65 16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Swing</span>
+                            <span class="tag">Audio</span>
+                            <span class="tag">DSP</span>
+                        </div>                        <h3>Pauvocoder - SAÉ 1.2</h3>
+                        <p>Application Java de traitement audio en temps réel avec interface graphique pour créer des effets vocoder (travail en binôme)</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13V6A2 2 0 0 0 16 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H11"/>
+                                    <circle cx="18" cy="18" r="3"/>
+                                    <path d="M22 18L20 20L18 18"/>
+                                </svg>
+                                Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web sae">
+                    <div class="project-image">
+                        <img src="assets/project1.jpg" alt="Site d'analyse Thales" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="btn-zoom" data-project="3">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="M21 21L16.65 16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                        </div>                        <h3>Site d'analyse Thales - SAÉ 5.6</h3>
+                        <p>Plateforme web d'analyse avec intégration iframe pour visualiser et analyser des données complexes (travail en groupe)</p>
+                        <div class="project-links">
+                            <a href="https://laura1726.github.io/SAE/histoire.html" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13V6A2 2 0 0 0 16 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H11"/>
+                                    <circle cx="18" cy="18" r="3"/>
+                                    <path d="M22 18L20 20L18 18"/>
+                                </svg>
+                                Voir la démo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="app sae">
+                    <div class="project-image">
+                        <img src="assets/project1.jpg" alt="Jeu Quixo" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="btn-zoom" data-project="4">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="M21 21L16.65 16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">JavaFX</span>
+                            <span class="tag">MVC</span>
+                            <span class="tag">Git</span>
+                        </div>                        <h3>Jeu Quixo - SAÉ 1.2.6</h3>
+                        <p>Implémentation du jeu Quixo en Java avec JavaFX, développé en binôme avec architecture MVC</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13V6A2 2 0 0 0 16 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H11"/>
+                                    <circle cx="18" cy="18" r="3"/>
+                                    <path d="M22 18L20 20L18 18"/>
+                                </svg>
+                                Télécharger
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ajouter plus de cartes projet ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">Restons en contact pour discuter de projets ou d'opportunités</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>                        <h3>Email</h3>
+                        <p>pierrickbapicot@gmail.com</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19C-2 8 2 3 9 3C16 3 20 8 9 19Z"/>
+                                <circle cx="9" cy="8" r="2"/>
+                            </svg>
+                        </div>                        <h3>Localisation</h3>
+                        <p>Territoire de Belfort, France</p>
+                    </div>
+                      <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12L4.6 7.6C4.2 7.2 4.2 6.6 4.6 6.2L6.2 4.6C6.6 4.2 7.2 4.2 7.6 4.6L12 9L16.4 4.6C16.8 4.2 17.4 4.2 17.8 4.6L19.4 6.2C19.8 6.6 19.8 7.2 19.4 7.6L15 12L19.4 16.4C19.8 16.8 19.8 17.4 19.4 17.8L17.8 19.4C17.4 19.8 16.8 19.8 16.4 19.4L12 15L7.6 19.4C7.2 19.8 6.6 19.8 6.2 19.4L4.6 17.8C4.2 17.4 4.2 16.8 4.6 16.4L9 12Z"/>
+                            </svg>
+                        </div>                        <h3>GitHub</h3>
+                        <p>github.com/Pierrick-B</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0189 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1568 2.4189Z"/>
+                            </svg>
+                        </div>
+                        <h3>Discord</h3>
+                        <p>pibaps</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">{ }</span>
+                    <p>Portfolio BUT Informatique - 2025</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#hero">Accueil</a>
+                    <a href="#about">À propos</a>
+                    <a href="#competence1">Compétences</a>
+                    <a href="#projects">Projets</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.477 2 2 6.484 2 12.017C2 16.624 5.865 20.426 10.839 21.179C11.339 21.269 11.521 20.956 11.521 20.682C11.521 20.434 11.512 19.729 11.507 18.817C7.726 19.454 7.139 17.201 7.139 17.201C6.696 16.017 6.026 15.705 6.026 15.705C5.12 15.042 6.097 15.053 6.097 15.053C7.101 15.126 7.629 16.142 7.629 16.142C8.521 17.723 10.013 17.268 11.540 16.997C11.631 16.313 11.889 15.858 12.175 15.595C9.443 15.329 6.544 14.379 6.544 10.572C6.544 9.443 6.916 8.524 7.650 7.808C7.545 7.542 7.194 6.447 7.749 5.006C7.749 5.006 8.586 4.728 11.499 6.304C12.294 6.073 13.148 5.957 14.001 5.953C14.853 5.957 15.707 6.073 16.504 6.304C19.413 4.728 20.248 5.006 20.248 5.006C20.805 6.447 20.453 7.542 20.348 7.808C21.085 8.524 21.453 9.443 21.453 10.572C21.453 14.390 18.549 15.326 15.809 15.588C16.180 15.916 16.492 16.565 16.492 17.559C16.492 18.982 16.479 20.126 16.479 20.682C16.479 20.958 16.657 21.274 17.167 21.178C22.140 20.422 26 16.623 26 12.017C26 6.484 21.522 2 12 2Z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166V20.452H20.447ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.230 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.230 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Portfolio BUT Informatique. Fait avec ❤️ et beaucoup de ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="lightbox-body" id="lightboxBody">
+                <!-- Contenu dynamique -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
