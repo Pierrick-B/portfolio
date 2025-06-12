@@ -1,0 +1,736 @@
+/* ==============================================
+   SECTIONS COMPÉTENCES
+   ============================================== */
+
+.competence {
+  position: relative;
+  overflow: hidden;
+}
+
+.competence::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-border), transparent);
+}
+
+.competence-dev {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.02) 0%, transparent 50%);
+}
+
+.competence-optim {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.02) 0%, transparent 50%);
+}
+
+.competence-dashboard {
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-3xl);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.dashboard-header h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.progress-ring {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.progress-ring-svg {
+  transform: rotate(-90deg);
+}
+
+.progress-ring-circle {
+  stroke-dasharray: 327;
+  stroke-dashoffset: 327;
+  transition: stroke-dashoffset 2s ease-out;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.competence-components {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.component-card {
+  background: var(--color-bg);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-normal);
+}
+
+.component-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-0.25rem);
+  box-shadow: var(--shadow-lg);
+}
+
+.component-icon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 50%;
+  color: var(--color-primary);
+}
+
+.component-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.component-card h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+}
+
+.component-card p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+}
+
+.component-progress {
+  background: var(--color-border);
+  height: 0.5rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  border-radius: var(--radius-lg);
+  width: 0;
+  transition: width 2s ease-out;
+}
+
+/* Analyse des compétences */
+.competence-analysis {
+  margin-bottom: var(--spacing-3xl);
+}
+
+.analysis-grid {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-xl);
+}
+
+.analysis-card {
+  background: var(--color-surface);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-normal);
+  max-width: 800px;
+  width: 100%;
+}
+
+.analysis-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.analysis-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text-primary);
+}
+
+.knowledge-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.knowledge-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.knowledge-item {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.knowledge-level {
+  font-size: 0.75rem;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.knowledge-level[data-level="acquis"],
+.knowledge-level:contains("Acquis") {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--color-success);
+}
+
+.knowledge-level[data-level="en-cours"],
+.knowledge-level:contains("En cours") {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--color-warning);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--spacing-sm);
+}
+
+.skill-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: var(--color-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+.skill-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.skills-category {
+  margin-bottom: var(--spacing-lg);
+}
+
+.skills-category h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+}
+
+/* Dark mode adjustments pour les skill-tags */
+.dark .skill-tag:hover {
+  background: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* Section d'analyse réflexive */
+.reflexion-critique {
+  margin-top: 6rem;
+  padding-top: 4rem;
+  border-top: 3px solid var(--color-border);
+  position: relative;
+  z-index: 5;
+}
+
+.reflexion-critique h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-xl);
+  color: var(--color-text-primary);
+  text-align: center;
+}
+
+.reflexion-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reflexion-card {
+  background: var(--color-surface);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.reflexion-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.reflexion-card h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+}
+
+.competences-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.competence-item {
+  background: var(--color-bg);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.competence-item h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-primary);
+}
+
+.competence-item p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xs);
+  font-size: 0.9rem;
+}
+
+.competence-item small {
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.vision-simple {
+  background: var(--color-bg);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-primary);
+}
+
+.vision-simple p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Styles pour les images des projets SAÉ */
+.ecommerce-site-card,
+.quixo-game-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-normal);
+  min-height: auto;
+}
+
+.ecommerce-site-card:hover,
+.quixo-game-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+}
+
+.ecommerce-site-image,
+.quixo-menu-image {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  max-height: 750px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  background: white;
+  padding: var(--spacing-sm);
+}
+
+.ecommerce-site-image:hover,
+.quixo-menu-image:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+.ecommerce-description,
+.quixo-description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.ecommerce-description p,
+.quixo-description p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Images dans les modals SAÉ */
+.sae-image {
+  width: 100%;
+  max-height: 400px;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  margin-bottom: var(--spacing-sm);
+  background: white;
+  padding: var(--spacing-xs);
+}
+
+.sae-image:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+/* Styles pour les nouvelles cartes de collaboration (Compétence 2) */
+.collaboration-project-card,
+.hackathon-project-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-normal);
+  min-height: auto;
+}
+
+.collaboration-project-card:hover,
+.hackathon-project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+}
+
+.collaboration-image,
+.hackathon-image {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  max-height: 400px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  background: white;
+  padding: var(--spacing-sm);
+}
+
+.collaboration-image:hover,
+.hackathon-image:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+.collaboration-description,
+.hackathon-description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.collaboration-description p,
+.hackathon-description p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Styles pour les boutons SAÉ details */
+.sae-details-btn {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: white;
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  margin-top: var(--spacing-md);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.sae-details-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+}
+
+.sae-details-btn:active {
+  transform: translateY(0);
+}
+
+/* Styles pour les sections de code dans les modals */
+.sae-code-section {
+  margin-top: var(--spacing-xl);
+}
+
+.sae-code-section h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text-primary);
+}
+
+.competences-techniques {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.code-insight {
+  margin-top: var(--spacing-xl);
+  background: var(--color-bg);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-primary);
+}
+
+.code-insight h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-primary);
+}
+
+.code-insight p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.code-insight code {
+  background: rgba(59, 130, 246, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--color-primary);
+  font-size: 0.85rem;
+}
+
+/* Section de règles de jeu */
+.game-rules-section {
+  background: var(--color-bg);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  margin-bottom: var(--spacing-xl);
+}
+
+.game-rules-section h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+}
+
+.game-rules-section p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Section image SAÉ */
+.sae-image-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.sae-image-section h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+}
+
+.sae-image-section p {
+  color: var(--color-text-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: var(--spacing-sm);
+  margin-bottom: 0;
+}
+
+/* Styles pour l'iframe du site Thalès */
+.iframe-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: var(--spacing-lg);
+  background: var(--color-bg);
+  box-shadow: var(--shadow-sm);
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  transition: all var(--transition-normal);
+}
+
+.iframe-container:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+/* Styles pour les liens externes sur les images */
+.collaboration-project-card a,
+.hackathon-project-card a {
+  display: block;
+  text-decoration: none;
+  transition: all var(--transition-normal);
+}
+
+.collaboration-project-card a:hover,
+.hackathon-project-card a:hover {
+  transform: translateY(-2px);
+}
+
+/* Section résultats dans les modals */
+.results-section {
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1));
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-success);
+}
+
+.results-section h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+}
+
+.results-section p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-sm);
+}
+
+.results-section p:last-child {
+  margin-bottom: 0;
+}
+
+/* Images dans la section réflexive */
+.reflexion-image-container {
+  margin: var(--spacing-md) 0;
+  padding: var(--spacing-md);
+  background: var(--color-surface-alt);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.reflexion-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.reflexion-image:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-md);
+}
+
+.image-caption {
+  margin-top: var(--spacing-sm);
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+  text-align: center;
+}
+
+/* Image Discord spécifique - taille réduite */
+.reflexion-image[src*="discord_sae.png"] {
+  max-width: 250px; /* Réduit de moitié par rapport aux 500px par défaut */
+}
+
+/* Responsive pour l'image Discord */
+@media (max-width: 768px) {
+  .reflexion-image[src*="discord_sae.png"] {
+    max-width: 200px;
+  }
+}
+
+/* Responsive pour les images réflexives */
+@media (max-width: 768px) {
+  .reflexion-image-container {
+    padding: var(--spacing-sm);
+  }
+  
+  .reflexion-image {
+    max-width: 100%;
+  }
+}

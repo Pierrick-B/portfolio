@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Contraste - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contrast-test {
+            padding: 2rem;
+            margin: 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+        }
+        .test-section {
+            margin: 1rem 0;
+            padding: 1rem;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+        }
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .color-demo {
+            padding: 1rem;
+            text-align: center;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body data-theme="light">
+    <div class="container">
+        <h1>Test de Contraste - Mode Clair</h1>
+        
+        <button onclick="toggleTheme()" class="btn btn-primary">Basculer Mode Sombre/Clair</button>
+        
+        <div class="contrast-test">
+            <h2>Textes Principaux</h2>
+            <div class="test-section">
+                <h3 style="color: var(--color-text-primary)">Texte Principal (--color-text-primary)</h3>
+                <p style="color: var(--color-text-secondary)">Texte Secondaire (--color-text-secondary)</p>
+                <p style="color: var(--color-text-muted)">Texte Discret (--color-text-muted)</p>
+            </div>
+        </div>
+
+        <div class="contrast-test">
+            <h2>Éléments Interactifs</h2>
+            <div class="test-grid">
+                <div class="skill-tag">
+                    <span>Skill Tag Test</span>
+                </div>
+                <div class="badge">Badge Test</div>
+                <div class="tag">Project Tag</div>
+                <button class="filter-btn">Filtre Test</button>
+            </div>
+        </div>
+
+        <div class="contrast-test">
+            <h2>Cartes et Surfaces</h2>
+            <div class="test-grid">
+                <div class="about-card">
+                    <h3>Carte About</h3>
+                    <p>Contenu de test pour vérifier la lisibilité</p>
+                </div>
+                <div class="component-card">
+                    <h4>Carte Component</h4>
+                    <p>Texte de test sur fond de carte</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contrast-test">
+            <h2>Navigation</h2>
+            <div class="test-section" style="background: var(--nav-bg); backdrop-filter: blur(20px);">
+                <a href="#" class="nav-link">Lien Navigation</a>
+                <a href="#" class="nav-link active">Lien Actif</a>
+            </div>
+        </div>
+
+        <div class="contrast-test">
+            <h2>Boutons</h2>
+            <div class="test-grid">
+                <button class="btn btn-primary">Bouton Principal</button>
+                <button class="btn btn-secondary">Bouton Secondaire</button>
+                <div class="btn-zoom">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="M21 21L16.65 16.65"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const currentTheme = document.body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.body.setAttribute('data-theme', newTheme);
+            document.documentElement.setAttribute('data-theme', newTheme);
+        }
+    </script>
+</body>
+</html>

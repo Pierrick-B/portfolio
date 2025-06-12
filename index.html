@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Pierrick Bapicot - Portfolio BUT Informatique</title>
     <meta name="description" content="Portfolio de Pierrick Bapicot, étudiant BUT Informatique à l'IUT Nord Franche-Comté de Belfort">
-    
-    <!-- Fonts Google -->
+      <!-- Fonts Google -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS Modulaires -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/competences.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/responsive.css">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -38,11 +46,10 @@
         <div class="nav-brand">
             <span class="nav-logo">{ }</span>
             <span class="nav-title">Portfolio</span>
-        </div>
-        <ul class="nav-menu" id="navMenu">
+        </div>        <ul class="nav-menu" id="navMenu">
             <li><a href="#hero" class="nav-link active" data-section="hero">Accueil</a></li>
-            <li><a href="#about" class="nav-link" data-section="about">À propos</a></li>            <li><a href="#competence1" class="nav-link" data-section="competence1">Réaliser</a></li>
-            <li><a href="#competence2" class="nav-link" data-section="competence2">Collaborer</a></li>
+            <li><a href="#about" class="nav-link" data-section="about">À propos</a></li>            <li><a href="#competence1" class="nav-link" data-section="competence1"><span class="nav-full">Réaliser</span><span class="nav-short">Dev</span></a></li>
+            <li><a href="#competence2" class="nav-link" data-section="competence2"><span class="nav-full">Collaborer</span><span class="nav-short">Team</span></a></li>
             <li><a href="#projects" class="nav-link" data-section="projects">Projets</a></li>
             <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
         </ul>
@@ -63,11 +70,10 @@
                 <div class="hero-text">                    <h1 class="hero-title">
                         <span class="typing-text">Pierrick Bapicot</span>
                         <span class="cursor">|</span>
-                    </h1>
-                    <p class="hero-subtitle">
+                    </h1>                    <p class="hero-subtitle">
                         Étudiant BUT Informatique, 19 ans, du Territoire de Belfort.
-                        Passionné par le développement d'applications et la collaboration en équipe.
-                    </p>                    <div class="hero-badges">
+                        Passionné par mes projets de développement d'applications et mes expériences de collaboration en équipe.
+                    </p><div class="hero-badges">
                         <span class="badge">HTML/CSS/JS</span>
                         <span class="badge">Python</span>
                         <span class="badge">Java</span>
@@ -142,8 +148,8 @@
                         <p>
                             Je suis Pierrick Bapicot, 19 ans, originaire du Territoire de Belfort. 
                             Actuellement en 1ère année de BUT Informatique à l'IUT Nord Franche-Comté,
-                            je me passionne pour le développement d'applications et le travail collaboratif.
-                            Chaque projet est une opportunité d'apprendre et de grandir.
+                            je me passionne pour le développement d'applications et la collaboration en équipe.
+                            Chaque projet que j'ai vécu m'a appris quelque chose de nouveau et m'a fait grandir.
                         </p>
                         <div class="timeline">
                             <div class="timeline-item">
@@ -158,21 +164,17 @@
                                 <span class="timeline-date">2022-2023</span>
                                 <span class="timeline-event">Baccalauréat obtenu</span>
                             </div>
-                            <div class="timeline-item">
-                                <span class="timeline-date">2005</span>
-                                <span class="timeline-event">Naissance dans le Territoire de Belfort</span>
-                            </div>
                         </div>
                     </div>
-                    
-                    <div class="about-card">
+                      <div class="about-card">
                         <h3>Ma motivation</h3>
                         <p>
                             L'informatique représente pour moi l'alliance parfaite entre créativité technique 
-                            et résolution de problèmes concrets. J'apprécie particulièrement le travail en équipe 
-                            qui permet de combiner différentes expertises pour créer des solutions innovantes. 
-                            Mon objectif est de continuer à développer mes compétences tout en contribuant 
-                            positivement aux projets collectifs.
+                            et résolution de problèmes concrets. Ce que j'apprécie le plus, c'est le travail en équipe 
+                            que j'ai pu expérimenter dans mes projets SAÉ, où j'ai appris à combiner mes compétences 
+                            avec celles de mes coéquipiers pour créer des solutions innovantes. 
+                            Mon objectif est de continuer à développer mes compétences tout en apportant ma contribution 
+                            positive aux projets sur lesquels je travaille.
                         </p>
                     </div>
                 </div>
@@ -242,9 +244,8 @@
                                 <polyline points="16,18 22,12 16,6"/>
                                 <polyline points="8,6 2,12 8,18"/>
                             </svg>
-                        </div>
-                        <h4>Développer des applications informatiques simples</h4>
-                        <p>Conception et réalisation d'applications en utilisant différents paradigmes de programmation.</p>
+                        </div>                        <h4>Développer des applications informatiques simples</h4>
+                        <p>J'apprends à concevoir et réaliser des applications en utilisant différents paradigmes de programmation.</p>
                         <div class="component-progress">
                             <div class="progress-bar" data-width="80"></div>
                         </div>
@@ -255,9 +256,8 @@
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M14.7 6.3A1 1 0 0 0 13 5H5A2 2 0 0 0 3 7V19A2 2 0 0 0 5 21H13A1 1 0 0 0 14.7 19.7L21 13L14.7 6.3Z"/>
                             </svg>
-                        </div>
-                        <h4>Partir des exigences et aller jusqu'à une application complète</h4>
-                        <p>Analyse des besoins, conception, développement et tests d'applications fonctionnelles.</p>
+                        </div>                        <h4>Partir des exigences et aller jusqu'à une application complète</h4>
+                        <p>Je pratique l'analyse des besoins, la conception, le développement et les tests d'applications fonctionnelles.</p>
                         <div class="component-progress">
                             <div class="progress-bar" data-width="70"></div>
                         </div>
@@ -269,41 +269,18 @@
                                 <path d="M21 16V8A2 2 0 0 0 19 6H5A2 2 0 0 0 3 8V16A2 2 0 0 0 5 18H19A2 2 0 0 0 21 16Z"/>
                                 <polyline points="7,10 12,15 17,10"/>
                             </svg>
-                        </div>
-                        <h4>Appliquer des méthodes de développement</h4>
-                        <p>Utilisation de méthodologies structurées et d'outils de développement collaboratif.</p>
+                        </div>                        <h4>Appliquer des méthodes de développement</h4>
+                        <p>J'utilise des méthodologies structurées et des outils de développement collaboratif.</p>
                         <div class="component-progress">
                             <div class="progress-bar" data-width="65"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="competence-analysis">
+              <div class="competence-analysis">
                 <div class="analysis-grid">
-                    <div class="analysis-card knowledge">
-                        <h3>Savoirs théoriques</h3>
-                        <ul class="knowledge-list">
-                            <li>
-                                <span class="knowledge-item">Paradigmes de programmation</span>
-                                <span class="knowledge-level">Acquis</span>
-                            </li>
-                            <li>
-                                <span class="knowledge-item">Structures de données</span>
-                                <span class="knowledge-level">Acquis</span>
-                            </li>
-                            <li>
-                                <span class="knowledge-item">Algorithmique</span>
-                                <span class="knowledge-level">En cours</span>
-                            </li>
-                            <li>
-                                <span class="knowledge-item">Génie logiciel</span>
-                                <span class="knowledge-level">En cours</span>
-                            </li>
-                        </ul>
-                    </div>
-                      <div class="analysis-card skills">
-                        <h3>Savoir-faire pratiques</h3>
+                    <div class="analysis-card skills">
+                        <h3>Mes savoirs et savoir-faire</h3>
                         
                         <div class="skills-category">
                             <h4>Langages de programmation</h4>
@@ -337,7 +314,8 @@
                             <h4>Frameworks & Libraries</h4>
                             <div class="skills-grid">
                                 <div class="skill-tag">
-                                    <img src="https://miro.medium.com/v2/resize:fit:548/1*TbPi3VMXptPUJXbetjaayg.png" alt="Flask" class="skill-icon flask-logo">
+                                    <img src="https://miro.medium.com/v2/resize:fit:548/1*TbPi3VMXptPUJXbetjaayg.png" alt="
+                                    " class="skill-icon flask-logo">
                                     Flask
                                 </div>
                                 <div class="skill-tag">
@@ -391,137 +369,89 @@
                                     Git/GitHub
                                 </div>
                                 <div class="skill-tag">Debugging</div>
-                                <div class="skill-tag">Testing</div>
-                            </div>
+                                <div class="skill-tag">Testing</div>                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            
+                    </div>                </div>            </div>
+              
             <div class="sae-showcase">
-                <h3>Illustration dans les SAÉ</h3>
-                <div class="sae-grid">                    <div class="sae-card" data-sae="1">
-                        <div class="sae-front">
-                            <div class="sae-header">
-                                <span class="sae-type">SAÉ 5.6</span>
-                                <h4>Site d'analyse Thales</h4>
-                            </div>
-                            <div class="sae-preview">
-                                <div class="web-preview">
-                                    <div class="browser-chrome">
-                                        <div class="browser-dots">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <div class="browser-url">thales-analysis.com</div>
-                                    </div>
-                                    <div class="iframe-placeholder">
-                                        <div class="chart-icon">📊</div>
-                                        <p>Site d'analyse interactif</p>
+                <h3>Mes expériences dans les SAÉ</h3>
+                <div class="sae-grid">
+                    <div class="sae-card" data-sae="345">
+                        <div class="sae-header">
+                            <span class="sae-type">SAÉ 3.4.5</span>
+                            <h4>Site e-commerce en équipe</h4>
+                        </div>
+                        <div class="sae-content">
+                            <div class="ecommerce-site-card">
+                                <img src="assets/page_principale_e-commerce.png" alt="Site E-commerce" class="ecommerce-site-image" onclick="openImageModal('assets/page_principale_e-commerce.png', 'Interface du site e-commerce')">                                <div class="ecommerce-description">
+                                    <p><strong>Technologies :</strong> HTML, CSS, Flask (Python), MySQL</p>
+                                    <p>Nous avons développé une plateforme e-commerce complète en équipe, en créant un système de gestion des utilisateurs, un catalogue produits, un panier d'achat et un système de commandes. J'ai appris à utiliser Flask comme framework backend pour gérer les requêtes HTTP et les interactions avec la base de données MySQL que nous avons conçue.</p>
+                                    <div class="competences-mobilisees">
+                                        <h5>Ce que j'ai appris :</h5>
+                                        <ul>
+                                            <li>Architecture web MVC que j'ai mise en pratique</li>
+                                            <li>Développement backend avec Flask et Python que j'ai maîtrisé</li>
+                                            <li>Conception et manipulation de bases de données que j'ai expérimentées</li>
+                                            <li>Sécurisation des données et authentification que j'ai implémentées</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="sae-flip-hint">Cliquer pour plus de détails</div>
                         </div>
-                        <div class="sae-back">
-                            <h4>Traces et analyse</h4>                            <div class="trace-content">
-                                <p><strong>Contexte :</strong> Développement d'un site web d'analyse avec intégration d'iframe pour visualiser des données Thales. <em>Travail en groupe.</em></p>
-                                <p><strong>Technologies :</strong> HTML5, CSS3, JavaScript, API REST</p>
-                                <p><strong>Compétences mobilisées :</strong></p>
-                                <ul>
-                                    <li>Développement web front-end avancé</li>
-                                    <li>Intégration d'iframe et gestion de contenu externe</li>
-                                    <li>Interface utilisateur interactive</li>
-                                    <li>Traitement et visualisation de données</li>
-                                </ul>
-                                <div class="trace-files">
-                                    <span class="file-tag">🌐 Site web déployé</span>
-                                    <span class="file-tag">📊 Intégration iframe</span>
-                                    <span class="file-tag">💻 Code source</span>
-                                </div>
-                            </div>
-                        </div>
+                        <button class="sae-details-btn" onclick="openSaeModal('345')">Voir plus de détails</button>
                     </div>
                     
-                    <div class="sae-card" data-sae="2">
-                        <div class="sae-front">
-                            <div class="sae-header">
-                                <span class="sae-type">SAÉ 1.2</span>
-                                <h4>Pauvocoder Java</h4>
-                            </div>
-                            <div class="sae-preview">
-                                <div class="audio-preview">
-                                    <div class="audio-interface">
-                                        <div class="audio-waveform">
-                                            <div class="wave-bar"></div>
-                                            <div class="wave-bar"></div>
-                                            <div class="wave-bar"></div>
-                                            <div class="wave-bar"></div>
-                                            <div class="wave-bar"></div>
-                                        </div>
-                                        <div class="audio-controls">
-                                            <button class="play-btn">▶</button>
-                                            <span class="audio-label">Vocoder</span>
-                                        </div>
+                    <div class="sae-card" data-sae="126">
+                        <div class="sae-header">
+                            <span class="sae-type">SAÉ 1.2.6</span>
+                            <h4>Jeu Quixo avec IA</h4>
+                        </div>
+                        <div class="sae-content">
+                            <div class="quixo-game-card">
+                                <img src="assets/menu_quixo.png" alt="Quixo Game Menu" class="quixo-menu-image" onclick="openImageModal('assets/menu_quixo.png', 'Interface du jeu Quixo')">                                <div class="quixo-description">
+                                    <p><strong>Le jeu Quixo :</strong> Un jeu de stratégie sur plateau 5×5 que j'ai découvert et programmé. L'objectif est d'aligner 5 pièces de sa couleur en manipulant les cubes depuis les bords, créant des déplacements en cascade fascinants.</p>
+                                    <p><strong>Technologies :</strong> Java, JavaFX, Algorithmes d'IA</p>
+                                    <p>Nous avons développé ce jeu en créant une interface graphique moderne avec JavaFX et en implémentant une intelligence artificielle. Ce projet m'a permis de combiner ma maîtrise de la programmation orientée objet, le design d'interface utilisateur et les algorithmes de décision pour créer une IA capable de jouer stratégiquement contre moi.</p>
+                                    <div class="competences-mobilisees">
+                                        <h5>Ce que j'ai appris :</h5>
+                                        <ul>
+                                            <li>Programmation orientée objet avancée en Java que j'ai perfectionnée</li>
+                                            <li>Développement d'interfaces graphiques avec JavaFX que j'ai exploré</li>
+                                            <li>Implémentation d'algorithmes d'IA que j'ai créés de mes mains</li>
+                                            <li>Architecture logicielle avec pattern MVC que j'ai appliquée</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="sae-flip-hint">Cliquer pour plus de détails</div>
                         </div>
-                        <div class="sae-back">
-                            <h4>Traces et analyse</h4>                            <div class="trace-content">
-                                <p><strong>Contexte :</strong> Développement d'un pauvocoder (vocoder simplifié) en Java avec traitement audio en temps réel. <em>Travail en binôme.</em></p>
-                                <p><strong>Technologies :</strong> Java, JavaSound API, Swing</p>
-                                <p><strong>Compétences mobilisées :</strong></p>
-                                <ul>
-                                    <li>Programmation orientée objet avancée</li>
-                                    <li>Traitement du signal audio</li>
-                                    <li>Interface graphique Swing</li>
-                                    <li>Gestion des flux audio en temps réel</li>
-                                </ul>
-                                <div class="trace-files">
-                                    <span class="file-tag">🎵 Exemples audio</span>
-                                    <span class="file-tag">📱 Interface graphique</span>
-                                    <span class="file-tag">☕ Code Java</span>
-                                </div>
-                            </div>
-                        </div>
+                        <button class="sae-details-btn" onclick="openSaeModal('126')">Voir plus de détails</button>
                     </div>
                 </div>
             </div>
-            
+
             <div class="reflexion-critique">
-                <h3>Analyse réflexive et critique</h3>
-                <div class="reflexion-content">
-                    <div class="reflexion-card">
-                        <h4>Points forts développés</h4>
-                        <ul>
-                            <li>Maîtrise des langages de programmation fondamentaux (HTML, CSS, JavaScript, Python)</li>
-                            <li>Capacité à analyser un besoin client et le traduire en spécifications techniques</li>
-                            <li>Application des bonnes pratiques de développement (code propre, commentaires, versioning)</li>
-                            <li>Compréhension des architectures web modernes (front-end/back-end, MVC)</li>
-                        </ul>
+                <h3>🎯 Analyse réflexive et critique</h3>
+                <div class="reflexion-content">                    <div class="reflexion-card points-forts">
+                        <h4>✅ Points forts que j'ai développés</h4>
+                        <div class="competences-grid">
+                            <div class="competence-item">
+                                <h5>🌐 Développement web</h5>
+                                <p>HTML, CSS, JavaScript, API</p>
+                                <small>Que j'ai intégrées dans mes interfaces modernes</small>
+                            </div>
+                            <div class="competence-item">
+                                <h5>☕ Programmation orientée objet</h5>
+                                <p>Java, Python, architecture MVC</p>
+                                <small>Appliquées dans mes applications structurées</small>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="reflexion-card">
-                        <h4>Axes d'amélioration identifiés</h4>
-                        <ul>
-                            <li>Approfondir les méthodes de tests automatisés (tests unitaires, tests d'intégration)</li>
-                            <li>Développer mes compétences en sécurité applicative</li>
-                            <li>Améliorer ma maîtrise des frameworks modernes (React, Vue.js, Django)</li>
-                            <li>Renforcer mes connaissances en optimisation des performances</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="reflexion-card">
-                        <h4>Perspectives d'évolution</h4>
-                        <p>
-                            Cette compétence constitue le socle de ma formation en informatique. Je souhaite 
-                            continuer à la développer en explorant des technologies plus avancées comme les 
-                            frameworks JavaScript modernes, les architectures microservices, et en approfondissant 
-                            mes connaissances en développement mobile et en intelligence artificielle.
-                        </p>
+                    <div class="reflexion-card perspectives">
+                        <h4>🎯 Mes objectifs d'évolution</h4>
+                        <div class="vision-simple">
+                            <p>Je souhaite continuer à développer mes compétences en découvrant une plus grande variété de technologies et de frameworks modernes, tout en explorant de nouveaux domaines pour devenir un développeur encore plus polyvalent.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -556,9 +486,8 @@
                                 <path d="M23 21V19C23 18.1645 22.7155 17.3551 22.2094 16.7118C21.7033 16.0684 20.0652 15.6343 19 15.4751"/>
                                 <path d="M16 3.13A4.001 4.001 0 0 1 19 7C19 8.2 18.5 9.27 17.71 10"/>
                             </svg>
-                        </div>
-                        <h4>Identifier les processus de développement</h4>
-                        <p>Comprendre les méthodologies de travail en équipe et les rôles de chacun dans le projet.</p>
+                        </div>                        <h4>Identifier les processus de développement</h4>
+                        <p>J'apprends à comprendre les méthodologies de travail en équipe et les rôles de chacun dans mes projets.</p>
                         <div class="component-progress">
                             <div class="progress-bar" data-width="75"></div>
                         </div>
@@ -569,9 +498,8 @@
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M8 12H16M12 8V16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"/>
                             </svg>
-                        </div>
-                        <h4>Appliquer une démarche de travail collaboratif</h4>
-                        <p>Utiliser les outils de collaboration et suivre les bonnes pratiques de travail en équipe.</p>
+                        </div>                        <h4>Appliquer une démarche de travail collaboratif</h4>
+                        <p>J'utilise les outils de collaboration et je suis les bonnes pratiques de travail en équipe.</p>
                         <div class="component-progress">
                             <div class="progress-bar" data-width="70"></div>
                         </div>
@@ -584,165 +512,125 @@
                                 <polyline points="10,9 9,9 8,9"/>
                                 <polyline points="16,15 17,15 18,15"/>
                             </svg>
-                        </div>
-                        <h4>Acquérir les compétences interpersonnelles</h4>
-                        <p>Développer la communication, l'écoute et la gestion des conflits au sein des équipes projet.</p>
+                        </div>                        <h4>Acquérir des compétences relationnelles</h4>
+                        <p>Je développe ma communication, mon écoute et ma gestion des conflits au sein de mes équipes projet.</p>
                         <div class="component-progress">
                             <div class="progress-bar" data-width="68"></div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="competence-analysis">
-                <div class="analysis-grid">
-                    <div class="analysis-card knowledge">
-                        <h3>Savoirs théoriques</h3>
-                        <ul class="knowledge-list">
-                            <li>
-                                <span class="knowledge-item">Méthodologies Agiles (Scrum, Kanban)</span>
-                                <span class="knowledge-level">En cours</span>
-                            </li>
-                            <li>
-                                <span class="knowledge-item">Gestion de versions (Git)</span>
-                                <span class="knowledge-level">Acquis</span>
-                            </li>
-                            <li>
-                                <span class="knowledge-item">Communication professionnelle</span>
-                                <span class="knowledge-level">Acquis</span>
-                            </li>
-                            <li>
-                                <span class="knowledge-item">Travail collaboratif</span>
-                                <span class="knowledge-level">En cours</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="analysis-card skills">
-                        <h3>Savoir-faire pratiques</h3>
-                        <div class="skills-grid">
-                            <div class="skill-tag">Git/GitHub</div>
-                            <div class="skill-tag">Trello/Kanban</div>
-                            <div class="skill-tag">Discord/Teams</div>
-                            <div class="skill-tag">Documentation</div>
-                            <div class="skill-tag">Pair Programming</div>
-                            <div class="skill-tag">Code Review</div>
-                            <div class="skill-tag">Répartition des tâches</div>
-                            <div class="skill-tag">Communication écrite</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="sae-showcase">
-                <h3>Illustration dans les SAÉ</h3>
+                    </div>                </div>
+            </div>            <div class="sae-showcase">
+                <h3>Mes expériences collaboratives dans les SAÉ</h3>
                 <div class="sae-grid">
-                    <div class="sae-card" data-sae="1">
-                        <div class="sae-front">
-                            <div class="sae-header">
-                                <span class="sae-type">SAÉ 3.4.5</span>
-                                <h4>Projet e-commerce en équipe</h4>
-                            </div>
-                            <div class="sae-preview">
-                                <div class="team-preview">
-                                    <div class="team-member"></div>
-                                    <div class="team-member"></div>
-                                    <div class="team-member"></div>
-                                    <div class="team-member"></div>
-                                </div>
-                            </div>
-                            <div class="sae-flip-hint">Cliquer pour plus de détails</div>
+                    <div class="sae-card" data-sae="thales">
+                        <div class="sae-header">
+                            <span class="sae-type">SAÉ 5.6</span>
+                            <h4>Site web Thalès en équipe</h4>
                         </div>
-                        <div class="sae-back">
-                            <h4>Traces et analyse</h4>                            <div class="trace-content">
-                                <p><strong>Contexte :</strong> Développement d'un site e-commerce complet en équipe de 4 personnes. <em>Travail en groupe.</em></p>
-                                <p><strong>Technologies :</strong> PHP, MySQL, HTML/CSS, JavaScript</p>
-                                <p><strong>Compétences mobilisées :</strong></p>
-                                <ul>
-                                    <li>Répartition des tâches et planification</li>
-                                    <li>Utilisation de Git pour le travail collaboratif</li>
-                                    <li>Communication régulière et suivi d'avancement</li>
-                                    <li>Intégration et tests d'équipe</li>
-                                </ul>
-                                <div class="trace-files">
-                                    <span class="file-tag">📋 Tableau Kanban</span>
-                                    <span class="file-tag">🌳 Historique Git</span>
-                                    <span class="file-tag">📝 CR de réunions</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="sae-card" data-sae="2">
-                        <div class="sae-front">
-                            <div class="sae-header">
-                                <span class="sae-type">SAÉ 1.2.6</span>
-                                <h4>Jeu Quixo en binôme</h4>
-                            </div>
-                            <div class="sae-preview">
-                                <div class="game-preview">
-                                    <div class="game-board">
-                                        <div class="game-cell"></div>
-                                        <div class="game-cell"></div>
-                                        <div class="game-cell"></div>
+                        <div class="sae-content">
+                            <div class="collaboration-project-card">
+                                <a href="https://github.com/Laura1726/SAE/graphs/contributors" target="_blank">
+                                    <img src="assets/github_thales.png" alt="Contributeurs GitHub Thalès" class="collaboration-image" onclick="openImageModal('assets/github_thales.png', 'Graphique des contributeurs GitHub - Projet Thalès')">
+                                </a>                                <div class="collaboration-description">
+                                    <p><strong>Technologies :</strong> HTML5, CSS3, JavaScript</p>
+                                    <p><strong>Analyse :</strong> Thalès Services Numériques - Histoire, économie, projets</p>
+                                    <p>Nous avons travaillé en équipe de 4 personnes pour développer un site web d'analyse de Thalès Services Numériques. J'ai utilisé GitHub pour la première fois en situation collaborative, en nous répartissant les tâches par pages. J'ai appris à créer et maintenir une structure CSS commune pour assurer la cohérence visuelle entre toutes nos pages.</p>
+                                    <div class="competences-mobilisees">
+                                        <h5>Ce que j'ai appris :</h5>
+                                        <ul>
+                                            <li>Collaboration via GitHub que j'ai découverte (commits, pull)</li>
+                                            <li>Structuration CSS commune que j'ai mise en place</li>
+                                            <li>Répartition des tâches selon nos spécialisations</li>
+                                            <li>Coordination du design que j'ai expérimentée</li>
+                                            <li>Recherche et analyse documentaire en groupe</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="sae-flip-hint">Cliquer pour plus de détails</div>
                         </div>
-                        <div class="sae-back">
-                            <h4>Traces et analyse</h4>                            <div class="trace-content">
-                                <p><strong>Contexte :</strong> Développement du jeu Quixo en Java avec JavaFX en binôme. <em>Travail en binôme.</em></p>
-                                <p><strong>Technologies :</strong> Java, JavaFX, Git</p>
-                                <p><strong>Compétences mobilisées :</strong></p>
-                                <ul>
-                                    <li>Programmation en binôme (pair programming)</li>
-                                    <li>Architecture MVC collaborative</li>
-                                    <li>Tests et validation croisée du code</li>
-                                    <li>Résolution de conflits de fusion Git</li>
-                                </ul>
-                                <div class="trace-files">
-                                    <span class="file-tag">🎮 Jeu fonctionnel</span>
-                                    <span class="file-tag">📊 Diagramme UML</span>
-                                    <span class="file-tag">🧪 Tests unitaires</span>
+                        <button class="sae-details-btn" onclick="openSaeModal('thales')">Voir plus de détails</button>
+                    </div>
+                    
+                    <div class="sae-card" data-sae="quixo-team">
+                        <div class="sae-header">
+                            <span class="sae-type">SAÉ 1.2.6</span>
+                            <h4>Jeu Quixo en équipe (GitLab)</h4>
+                        </div>
+                        <div class="sae-content">
+                            <div class="hackathon-project-card">
+                                <img src="assets/gitlab_quixo.png" alt="GitLab Quixo collaboratif" class="hackathon-image" onclick="openImageModal('assets/gitlab_quixo.png', 'Interface GitLab - Projet Quixo collaboratif')">                                <div class="hackathon-description">
+                                    <p><strong>Technologies :</strong> Java, JavaFX, Git/GitLab</p>
+                                    <p><strong>Polyvalence :</strong> Collaboration sur GitLab (vs GitHub pour Thalès)</p>
+                                    <p>Nous avons développé le jeu Quixo en Java avec une équipe de 5 développeurs étudiants. Cette fois, j'ai utilisé GitLab pour montrer ma polyvalence avec différents outils de versioning. J'ai vécu un projet étalé sur plusieurs semaines avec une répartition équilibrée des contributions que nous avons organisée ensemble.</p>
+                                    <div class="competences-mobilisees">
+                                        <h5>Ce que j'ai vécu :</h5>
+                                        <ul>
+                                            <li>Maîtrise de GitLab que j'ai explorée (merge requests, issues)</li>
+                                            <li>Planification de développement sur plusieurs semaines que j'ai gérée</li>
+                                            <li>Architecture logicielle collaborative en Java que j'ai co-conçue</li>
+                                            <li>Intégration continue et tests en équipe que nous avons pratiqués</li>
+                                            <li>Documentation technique partagée que j'ai contribué à créer</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <button class="sae-details-btn" onclick="openSaeModal('quixo-team')">Voir plus de détails</button>
                     </div>
                 </div>
             </div>
-            
-            <div class="reflexion-critique">
+              <div class="reflexion-critique">
                 <h3>Analyse réflexive et critique</h3>
-                <div class="reflexion-content">
-                    <div class="reflexion-card">
-                        <h4>Points forts développés</h4>
+                <div class="reflexion-content">                    <div class="reflexion-card">
+                        <h4>Points forts que j'ai développés à travers mes projets</h4>
                         <ul>
-                            <li>Capacité d'adaptation aux différents styles de travail de mes coéquipiers</li>
-                            <li>Utilisation efficace des outils de collaboration (Git, Trello, Discord)</li>
-                            <li>Communication claire et régulière lors des réunions d'équipe</li>
-                            <li>Esprit d'entraide et de partage de connaissances</li>
+                            <li><strong>Coordination d'équipe (Projet Thalès) :</strong> Nous avons organisé des réunions hebdomadaires et participé à la répartition claire des pages à développer entre nous 4</li>
+                            <li><strong>Communication orale (Quixo/Thalès) :</strong> J'ai présenté régulièrement mes avancements lors des séances et pratiqué mon expression orale devant la classe</li>
+                            <li><strong>Distribution intelligente du travail (Quixo) :</strong> J'ai participé à l'allocation des tâches selon nos forces respectives (IHM, logique métier, IA, tests) comme on peut le voir dans mes commits GitLab</li>
+                            <li><strong>Planification avec diagramme de Gantt (Quixo) :</strong> J'ai utilisé des outils de gestion de projet pour respecter les échéances que nous nous étions fixées sur plusieurs semaines
+                                <div class="reflexion-image-container">
+                                    <img src="assets/gantt_quixo.png" alt="Diagramme de Gantt - Planification projet Quixo" class="reflexion-image" onclick="openImageModal('assets/gantt_quixo.png', 'Diagramme de Gantt - Organisation temporelle du projet Quixo')">
+                                    <p class="image-caption">Planification temporelle et répartition des tâches sur le projet Quixo</p>
+                                </div>
+                            </li>                            <li><strong>Coordination Discord :</strong> Nous avons mis en place des canaux thématiques pour organiser nos échanges et partager les ressources entre coéquipiers
+                                <div class="reflexion-image-container">
+                                    <img src="assets/discord_sae.png" alt="Serveur Discord SAÉ - Organisation collaborative" class="reflexion-image" onclick="openImageModal('assets/discord_sae.png', 'Organisation Discord - Canaux collaboratifs SAÉ')">
+                                    <p class="image-caption">Le serveur Discord que nous avons organisé par canaux thématiques pour coordonner nos SAÉ</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     
                     <div class="reflexion-card">
-                        <h4>Axes d'amélioration identifiés</h4>
+                        <h4>Mes apprentissages concrets des expériences collaboratives</h4>
                         <ul>
-                            <li>Développer mes compétences en gestion de projet et leadership</li>
-                            <li>Améliorer ma capacité à gérer les conflits et tensions</li>
-                            <li>Renforcer mes techniques de présentation et de documentation</li>
-                            <li>Approfondir ma connaissance des méthodologies Agiles</li>
+                            <li><strong>Polyvalence des outils :</strong> J'ai maîtrisé GitHub (Thalès) et GitLab (Quixo) démontrant mon adaptabilité aux différents environnements de développement</li>
+                            <li><strong>Gestion des conflits de merge :</strong> J'ai appris à résoudre les conflits Git lors de l'intégration du code en communiquant directement avec mes coéquipiers</li>
+                            <li><strong>Standards de code en équipe :</strong> Nous avons participé à l'établissement de conventions de nommage et de structure CSS commune pour maintenir la cohérence</li>
+                            <li><strong>Accompagnement des coéquipiers :</strong> J'ai partagé mes connaissances techniques (JavaFX, CSS avancé) pour homogénéiser le niveau de notre équipe</li>
                         </ul>
                     </div>
-                    
-                    <div class="reflexion-card">
-                        <h4>Perspectives d'évolution</h4>
+                      <div class="reflexion-card">
+                        <h4>Défis que j'ai rencontrés et solutions que j'ai apportées</h4>
                         <p>
-                            La collaboration en équipe est essentielle dans le monde professionnel. Je souhaite 
-                            continuer à développer cette compétence en participant à des projets de plus grande 
-                            envergure, en expérimentant différents rôles (chef de projet, développeur, testeur) 
-                            et en approfondissant ma maîtrise des méthodologies Agiles pour devenir un membre 
-                            d'équipe plus efficace et polyvalent.
+                            <strong>Synchronisation des développements parallèles :</strong> Sur le projet Quixo, j'ai vécu la coordination de 5 développeurs 
+                            travaillant simultanément, ce qui m'a demandé une discipline stricte dans l'utilisation de GitLab avec des merge requests 
+                            systématiques et des tests d'intégration réguliers que j'ai appris à maîtriser.
+                        </p>
+                        <p>                            <strong>Harmonisation des niveaux techniques :</strong> Dans notre équipe Thalès, j'ai constaté les différences de maîtrise CSS et nous avons 
+                            participé aux sessions d'entraide et à la création d'une feuille de style commune avec documentation intégrée.
+                        </p>                        <p>
+                            <strong>Respect des échéances collectives :</strong> Nous avons utilisé le diagramme de Gantt sur Quixo qui nous a permis de visualiser 
+                            les dépendances entre nos tâches et d'anticiper les retards potentiels en réajustant nos charges de travail.
+                        </p>
+                    </div>
+                    
+                    <div class="reflexion-card">
+                        <h4>Mon évolution vers des collaborations plus complexes</h4>
+                        <p>
+                            Ces expériences m'ont préparé à des projets d'équipe plus ambitieux en développant mes capacités de 
+                            coordination, ma polyvalence technique (GitHub/GitLab) et mes compétences relationnelles. Je souhaite 
+                            approfondir l'aspect gestion de projet en prenant des responsabilités de coordination sur des équipes 
+                            plus larges et explorer les méthodologies Agiles/Scrum dans un contexte professionnel.
                         </p>
                     </div>
                 </div>
@@ -786,9 +674,8 @@
                             <span class="tag">CSS3</span>
                             <span class="tag">JavaScript</span>
                             <span class="tag">Responsive</span>
-                        </div>
-                        <h3>Portfolio BUT Informatique</h3>
-                        <p>Portfolio académique moderne avec thème sombre/clair, animations fluides et analyse de compétences BUT</p>
+                        </div>                        <h3>Mon Portfolio BUT Informatique</h3>
+                        <p>Le portfolio académique moderne que vous consultez actuellement ! J'ai créé ce site avec un thème sombre/clair, des animations fluides et une analyse détaillée de mes compétences BUT</p>
                         <div class="project-links">
                             <a href="https://github.com/Pierrick-B" class="project-link">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -822,8 +709,8 @@
                             <span class="tag">Swing</span>
                             <span class="tag">Audio</span>
                             <span class="tag">DSP</span>
-                        </div>                        <h3>Pauvocoder - SAÉ 1.2</h3>
-                        <p>Application Java de traitement audio en temps réel avec interface graphique pour créer des effets vocoder (travail en binôme)</p>
+                        </div>                        <h3>Mon Pauvocoder - SAÉ 1.2</h3>
+                        <p>L'application Java de traitement audio en temps réel que j'ai développée avec mon binôme, avec une interface graphique pour créer des effets vocoder</p>
                         <div class="project-links">
                             <a href="#" class="project-link">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -857,8 +744,8 @@
                             <span class="tag">CSS</span>
                             <span class="tag">JavaScript</span>
                             <span class="tag">API</span>
-                        </div>                        <h3>Site d'analyse Thales - SAÉ 5.6</h3>
-                        <p>Plateforme web d'analyse avec intégration iframe pour visualiser et analyser des données complexes (travail en groupe)</p>
+                        </div>                        <h3>Notre site d'analyse Thalès - SAÉ 5.6</h3>
+                        <p>La plateforme web d'analyse que nous avons développée en équipe avec intégration iframe pour visualiser et analyser des données complexes de Thalès Services Numériques</p>
                         <div class="project-links">
                             <a href="https://laura1726.github.io/SAE/histoire.html" class="project-link">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -869,43 +756,7 @@
                                 Voir la démo
                             </a>
                         </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="app sae">
-                    <div class="project-image">
-                        <img src="assets/project1.jpg" alt="Jeu Quixo" loading="lazy">
-                        <div class="project-overlay">
-                            <button class="btn-zoom" data-project="4">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="11" cy="11" r="8"/>
-                                    <path d="M21 21L16.65 16.65"/>
-                                    <line x1="11" y1="8" x2="11" y2="14"/>
-                                    <line x1="8" y1="11" x2="14" y2="11"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">JavaFX</span>
-                            <span class="tag">MVC</span>
-                            <span class="tag">Git</span>
-                        </div>                        <h3>Jeu Quixo - SAÉ 1.2.6</h3>
-                        <p>Implémentation du jeu Quixo en Java avec JavaFX, développé en binôme avec architecture MVC</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13V6A2 2 0 0 0 16 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H11"/>
-                                    <circle cx="18" cy="18" r="3"/>
-                                    <path d="M22 18L20 20L18 18"/>
-                                </svg>
-                                Télécharger
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                    </div>                </div>
                 
                 <!-- Ajouter plus de cartes projet ici -->
             </div>
@@ -941,21 +792,15 @@
                             </svg>
                         </div>                        <h3>Localisation</h3>
                         <p>Territoire de Belfort, France</p>
+                    </div>                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <img src="https://images.seeklogo.com/logo-png/30/2/github-logo-png_seeklogo-304612.png" alt="GitHub" class="github-logo">
+                        </div>                        <h3>GitHub</h3>
+                        <p><a href="https://github.com/Pierrick-B" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/Pierrick-B</a></p>
                     </div>
                       <div class="contact-card">
                         <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 12L4.6 7.6C4.2 7.2 4.2 6.6 4.6 6.2L6.2 4.6C6.6 4.2 7.2 4.2 7.6 4.6L12 9L16.4 4.6C16.8 4.2 17.4 4.2 17.8 4.6L19.4 6.2C19.8 6.6 19.8 7.2 19.4 7.6L15 12L19.4 16.4C19.8 16.8 19.8 17.4 19.4 17.8L17.8 19.4C17.4 19.8 16.8 19.8 16.4 19.4L12 15L7.6 19.4C7.2 19.8 6.6 19.8 6.2 19.4L4.6 17.8C4.2 17.4 4.2 16.8 4.6 16.4L9 12Z"/>
-                            </svg>
-                        </div>                        <h3>GitHub</h3>
-                        <p>github.com/Pierrick-B</p>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0189 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1568 2.4189Z"/>
-                            </svg>
+                            <img src="https://brandeps.com/logo-download/D/Discord-logo-01.png" alt="Discord" class="discord-logo">
                         </div>
                         <h3>Discord</h3>
                         <p>pibaps</p>
@@ -1014,7 +859,250 @@
         </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
+    <!-- Image Modal pour affichage en grand -->
+    <div class="image-modal" id="imageModal">
+        <div class="image-modal-content">
+            <button class="image-modal-close" onclick="closeImageModal()">&times;</button>
+            <img id="modalImage" src="" alt="">
+            <div class="image-modal-caption" id="modalCaption"></div>
+        </div>
+    </div>    <!-- SAÉ Modals -->
+    <div class="sae-modal" id="saeModal345">
+        <div class="sae-modal-content">
+            <button class="sae-modal-close" onclick="closeSaeModal('345')">&times;</button>
+            <div class="sae-modal-header">
+                <h3 class="sae-modal-title">SAÉ 3.4.5 - Site e-commerce en équipe</h3>
+                <p class="sae-modal-subtitle">Ma création d'une plateforme e-commerce complète avec Flask et MySQL</p>
+            </div>
+            <div class="sae-modal-body">
+                <div class="sae-image-section">
+                    <h4>Interface de développement - PyCharm</h4>
+                    <img src="assets/code_e-commerce.png" alt="Code source du site e-commerce dans PyCharm" class="sae-image" onclick="openImageModal('assets/code_e-commerce.png', 'Environnement de développement PyCharm avec code Flask')">
+                    <p><em>Capture d'écran de l'IDE PyCharm montrant l'organisation du projet et le code backend Flask</em></p>
+                </div>
+                
+                <div class="sae-code-section">
+                    <h4>Savoirs et savoir-faire développés</h4>
+                    <div class="competences-techniques">
+                        <div class="competence-item">
+                            <h5><strong>🎯 Développement Backend Flask :</strong></h5>
+                            <p>Ma maîtrise des routes Flask avec décorateurs (@admin_article.route) que j'ai implémentées, gestion des méthodes HTTP que j'ai apprise, et architecture MVC pour séparer logique métier et présentation que j'ai appliquée.</p>
+                        </div>
+                        
+                        <div class="competence-item">
+                            <h5><strong>🗄️ Gestion de base de données MySQL :</strong></h5>
+                            <p>Mon écriture de requêtes SQL complexes avec JOIN, LEFT JOIN que j'ai maîtrisées, fonctions d'agrégation (COUNT, SUM) que j'ai utilisées, et clause GROUP BY pour optimiser les performances de récupération des données.</p>
+                        </div>
+                        
+                        <div class="competence-item">
+                            <h5><strong>🛠️ Organisation et méthodologie :</strong></h5>
+                            <p>Ma structuration de projet avec arborescence claire (visible dans PyCharm), séparation des fichiers templates, static, et modules Python que j'ai organisée pour une maintenance facilitée.</p>
+                        </div>
+                        
+                        <div class="competence-item">
+                            <h5><strong>💻 Outils de développement :</strong></h5>
+                            <p>Mon utilisation professionnelle de PyCharm (IDE) que j'ai maîtrisée, débogage que j'ai pratiqué, et intégration Git pour un développement collaboratif efficace.</p>
+                        </div>
+                        
+                        <div class="competence-item">
+                            <h5><strong>🔒 Sécurité et bonnes pratiques :</strong></h5>
+                            <p>Mon utilisation de get_db() pour la connexion sécurisée que j'ai implémentée, requêtes SQL paramétrées pour éviter les injections que j'ai appliquées, et gestion des sessions utilisateur que j'ai mise en place.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="code-insight">
+                        <h5>💡 Analyse technique du code :</h5>
+                        <p>La fonction <code>show_article()</code> illustre une requête complexe croisant plusieurs tables (boisson, type_boisson, commentaire) avec des agrégations pour calculer en temps réel les statistiques de commentaires. Cette approche démontre une compréhension avancée des bases de données relationnelles et de l'optimisation SQL.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sae-modal" id="saeModal126">
+        <div class="sae-modal-content">
+            <button class="sae-modal-close" onclick="closeSaeModal('126')">&times;</button>
+            <div class="sae-modal-header">
+                <h3 class="sae-modal-title">SAÉ 1.2.6 - Jeu Quixo avec IA</h3>
+                <p class="sae-modal-subtitle">Mon développement d'un jeu intelligent avec algorithmes d'IA en Java</p>
+            </div>
+            <div class="sae-modal-body">
+                <div class="game-rules-section">
+                    <h4>🎮 Le jeu Quixo - Principe</h4>
+                    <p><strong>Objectif :</strong> Être le premier à aligner 5 pièces de son symbole (X ou O) horizontalement, verticalement ou en diagonale sur un plateau 5×5. Les joueurs déplacent les cubes neutres ou leurs propres pièces depuis les bords du plateau vers l'intérieur, créant un jeu de stratégie et d'anticipation.</p>
+                </div>
+                
+                <div class="sae-image-section">
+                    <h4>Environnement de développement - IntelliJ IDEA</h4>
+                    <img src="assets/code_quixo.png" alt="Code source du jeu Quixo dans IntelliJ IDEA" class="sae-image" onclick="openImageModal('assets/code_quixo.png', 'Environnement de développement IntelliJ IDEA avec code Java')">
+                    <p><em>Capture d'écran d'IntelliJ IDEA montrant l'algorithme d'évaluation des positions et l'arborescence du projet</em></p>
+                </div>
+                
+                <div class="sae-code-section">
+                    <h4>Savoirs et savoir-faire développés</h4>
+                    <div class="competences-techniques">
+                        <div class="competence-item">
+                            <h5><strong>🧠 Intelligence Artificielle - Algorithmes de jeu :</strong></h5>
+                            <p>Mon développement d'une IA stratégique utilisant l'évaluation de positions et la pondération des coups que j'ai conçue. L'algorithme que j'ai créé analyse les configurations gagnantes (5 pièces alignées = 10 millions de points) et priorise les situations favorables que j'ai définies.</p>
+                        </div>
+                        
+                        <div class="competence-item">
+                            <h5><strong>🎯 Logique métier et stratégie :</strong></h5>
+                            <p>Mon implémentation de la fonction <code>countsToScore()</code> qui convertit l'état d'une ligne en score pondéré : priorité aux victoires immédiates que j'ai programmée, bonus pour les lignes de 4 pièces, malus en présence d'adversaires.</p>
+                        </div>
+                        
+                        <div class="competence-item">
+                            <h5><strong>☕ Programmation orientée objet en Java :</strong></h5>
+                            <p>Ma maîtrise des concepts Java : méthodes bien documentées avec JavaDoc que j'ai écrites, gestion des types primitifs (int[]) que j'ai apprise, structures conditionnelles complexes, et organisation modulaire du code que j'ai appliquée.</p>
+                        </div>
+                        
+                        <div class="competence-item">
+                            <h5><strong>🔧 Outils de développement IntelliJ IDEA :</strong></h5>
+                            <p>Mon utilisation professionnelle d'IntelliJ IDEA : navigation dans l'arborescence projet que j'ai maîtrisée, débogage d'algorithmes complexes que j'ai pratiqué, refactoring, et intégration Git pour le travail collaboratif.</p>
+                        </div>
+                        
+                        <div class="competence-item">
+                            <h5><strong>📐 Architecture et bonnes pratiques :</strong></h5>
+                            <p>Mon respect des conventions Java (nommage camelCase, commentaires explicites que j'ai rédigés), séparation claire entre données (counts[]) et traitement (score) que j'ai organisée, code lisible et maintenable que j'ai produit.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="code-insight">
+                        <h5>💡 Décryptage de l'algorithme :</h5>
+                        <p>La fonction <code>countsToScore()</code> transforme l'état d'une ligne en score numérique. Elle priorise les coups gagnants (10M pts), valorise les lignes sans opposition (×20), et anticipe les victoires à un coup (lignes de 4 = 10K pts). Cette approche simule un "regard stratégique" humain en privilégiant l'attaque et la défense.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    <!-- Modals SAÉ Collaboration (Compétence 2) -->
+    <div class="sae-modal" id="saeModalthales">
+        <div class="sae-modal-content">
+            <button class="sae-modal-close" onclick="closeSaeModal('thales')">&times;</button>
+            <div class="sae-modal-header">
+                <h3 class="sae-modal-title">SAÉ 5.6 - Site web Thalès en équipe</h3>
+                <p class="sae-modal-subtitle">Analyse collaborative de Thalès Services Numériques avec GitHub</p>
+            </div>
+            <div class="sae-modal-body">
+                <div class="collaboration-details-section">
+                    <h4>🌐 Site web live - Ma contribution</h4>
+                    <div class="iframe-container" style="position: relative; width: 100%; height: 400px; border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; margin-bottom: var(--spacing-lg);">
+                        <iframe src="https://laura1726.github.io/SAE/histoire.html" 
+                                style="width: 100%; height: 100%; border: none;" 
+                                title="Page Histoire - Site Thalès">
+                        </iframe>
+                    </div>
+                    <p><em>Page "Histoire" que j'ai développée - Notez la cohérence visuelle avec le reste du site grâce à notre structure CSS commune</em></p>
+                </div>
+                
+                <div class="sae-image-section">
+                    <h4>👥 Collaboration GitHub - Contributeurs</h4>
+                    <a href="https://github.com/Laura1726/SAE/graphs/contributors" target="_blank">
+                        <img src="assets/github_thales.png" alt="Contributeurs GitHub Thalès" class="sae-image" onclick="openImageModal('assets/github_thales.png', 'Graphique des contributeurs GitHub - Projet Thalès')">
+                    </a>
+                    <p><em>Graphique des contributions GitHub montrant le travail collaboratif de l'équipe sur plusieurs semaines</em></p>
+                </div>
+                
+                <div class="competencies-section">
+                    <h4>🎯 Compétences collaboratives développées</h4>
+                    <div class="competences-grid">
+                        <div class="competence-item">                            <h5><strong>🏗️ Architecture CSS commune :</strong></h5>
+                            <p>Notre mise en place d'une structure CSS modulaire partagée pour maintenir la cohérence visuelle entre toutes les pages développées par l'équipe.</p>
+                        </div>
+                        
+                        <div class="competence-item">
+                            <h5><strong>📝 Répartition par spécialisations :</strong></h5>
+                            <p>Notre organisation du travail par thématiques (Histoire, Économie, Projets, Contact) avec une responsabilité claire de chaque membre sur sa section que nous avons coordonnée.</p>
+                        </div>
+                          <div class="competence-item">
+                            <h5><strong>🔄 Workflow GitHub :</strong></h5>
+                            <p>Notre utilisation de branches, pull requests, et revues de code que nous avons pratiquée pour intégrer les contributions de chaque membre tout en maintenant la qualité que nous avons exigée.</p>
+                        </div>
+                          <div class="competence-item">
+                            <h5><strong>🎨 Cohérence design :</strong></h5>
+                            <p>Notre coordination pour maintenir un thème global cohérent que nous avons établi, partage des composants CSS réutilisables que nous avons créés, harmonisation des couleurs et typographies que nous avons dirigée.</p>
+                        </div>
+                        
+                        <div class="competence-item">
+                            <h5><strong>📚 Recherche collaborative :</strong></h5>
+                            <p>Notre analyse documentaire partagée sur Thalès Services Numériques que nous avons menée, validation croisée des informations que nous avons effectuée, synthèse collective des contenus que nous avons coordonnée.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sae-modal" id="saeModalquixo-team">
+        <div class="sae-modal-content">
+            <button class="sae-modal-close" onclick="closeSaeModal('quixo-team')">&times;</button>
+            <div class="sae-modal-header">
+                <h3 class="sae-modal-title">SAÉ 1.2.6 - Jeu Quixo en équipe (GitLab)</h3>
+                <p class="sae-modal-subtitle">Développement Java collaboratif avec GitLab - Polyvalence des outils</p>
+            </div>
+            <div class="sae-modal-body">
+                <div class="collaboration-details-section">
+                    <h4>🔧 Polyvalence des outils de versioning</h4>
+                    <p><strong>GitHub vs GitLab :</strong> Après avoir maîtrisé GitHub pour le projet Thalès, j'ai utilisé GitLab pour démontrer ma capacité d'adaptation aux différents environnements de développement collaboratif.</p>
+                    <p><strong>Technologies :</strong> Java, JavaFX pour l'interface utilisateur, intégration continue GitLab CI/CD</p>
+                </div>
+                
+                <div class="sae-image-section">
+                    <h4>📊 Statistiques de commits - Travail régulier</h4>
+                    <img src="assets/gitlab_commit_quixo.png" alt="Stats commits par jour GitLab" class="sae-image" onclick="openImageModal('assets/gitlab_commit_quixo.png', 'Statistiques des commits par jour de la semaine - Projet Quixo')">
+                    <p><em>Analyse des commits par jour de semaine montrant un travail régulier et étalé dans le temps, évitant le rush de dernière minute</em></p>
+                </div>
+                
+                <div class="sae-image-section">
+                    <h4>🦊 Interface GitLab - Gestion de projet</h4>
+                    <img src="assets/gitlab_quixo.png" alt="Interface GitLab Quixo" class="sae-image" onclick="openImageModal('assets/gitlab_quixo.png', 'Interface GitLab du projet Quixo collaboratif')">
+                    <p><em>Vue d'ensemble du repository GitLab avec la gestion des issues, merge requests et pipeline CI/CD</em></p>
+                </div>
+                
+                <div class="competencies-section">
+                    <h4>🎯 Compétences collaboratives développées</h4>
+                    <div class="competences-grid">
+                        <div class="competence-item">
+                            <h5><strong>🦊 Maîtrise GitLab :</strong></h5>
+                            <p>Mon adaptation rapide à l'interface GitLab, utilisation des merge requests que j'ai maîtrisée, gestion des issues et labels pour organiser notre travail d'équipe.</p>
+                        </div>
+                          <div class="competence-item">
+                            <h5><strong>📅 Planification étalée :</strong></h5>
+                            <p>Notre travail régulier sur plusieurs semaines (visible dans les stats), évitement du développement intensif de dernière minute que nous avons pratiqué, respect des délais que nous avons maintenu.</p>
+                        </div>
+                        
+                        <div class="competence-item">
+                            <h5><strong>🏗️ Architecture Java collaborative :</strong></h5>
+                            <p>Notre conception d'une architecture logicielle permettant le développement en parallèle, interfaces bien définies que nous avons créées, intégration fluide des modules que nous avons réalisée.</p>
+                        </div>
+                        
+                        <div class="competence-item">
+                            <h5><strong>🔄 Intégration continue :</strong></h5>
+                            <p>Notre mise en place de pipelines GitLab CI/CD pour automatiser les tests, validation automatique des merge requests que nous avons configurée, qualité de code que nous avons maintenue.</p>
+                        </div>
+                        
+                        <div class="competence-item">
+                            <h5><strong>📖 Documentation partagée :</strong></h5>
+                            <p>Notre rédaction collaborative du README, documentation des API internes que nous avons écrite, commentaires de code standardisés que nous avons établis pour faciliter la collaboration.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="results-section">
+                    <h4>🏆 Résultats de la collaboration</h4>
+                    <p><strong>Régularité :</strong> Commits équilibrés sur toute la période de développement, démontrant une organisation de travail mature et professionnelle.</p>
+                    <p><strong>Polyvalence :</strong> Maîtrise démontrée de GitHub ET GitLab, adaptabilité aux différents environnements de développement en équipe.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts Modulaires -->
+    <script src="js/config.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

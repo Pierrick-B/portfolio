@@ -1,0 +1,58 @@
+/* ==============================================
+   RESET ET BASE
+   ============================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+  overflow-x: hidden;
+}
+
+/* ==============================================
+   UTILITAIRES GLOBAUX
+   ============================================== */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+/* Animations d'apparition */
+.fade-in {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(3rem);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.slide-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
